@@ -1,0 +1,39 @@
+table,  th, td{
+    border: 1px solid green;
+     border-collapse:collapse ;
+     text-align: center;
+
+}
+th{
+    width: 200px;
+}
+a.highlight:hover {
+    color: #ff0000;
+  }
+a.green:hover {
+    color: green;
+}
+a[target=_blank] {
+    background-color: yellow;
+  }
+[title~=partners]
+{
+  border: 5px solid yellow
+}
+
+  .first p {
+    background-color: yellow;
+  }
+
+  .first +p {
+    background-color: red;
+  }
+
+  .second >p {
+    background-color: sienna;
+  }
+
+  .second ~p{
+    background-color: sienna;
+  }
+
