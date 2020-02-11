@@ -1,0 +1,81 @@
+
+table, td, th {
+    border: 2px solid burlywood;
+    border-collapse: collapse;
+    text-align: center;
+    
+}
+
+/* Descendant Selector */
+.first p {
+    background-color: yellow;
+}  
+
+.first +p {
+  background-color: red;
+}
+
+.second >p {
+  background-color: royalblue;
+}
+
+.second ~p {
+    background-color: yellowgreen;
+}
+
+
+table {
+    width: 200px;
+}
+
+/* Pseudo-Elements */
+p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+  p::first-letter {
+    color: orange;
+    font-size: xx-large;
+  }
+
+#employee {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #employee td, #employee th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #employee tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #employee tr:hover {background-color: #ddd;}
+  
+  #employee th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+
+/* Pseudo-class */
+  a.highlight:hover {
+    color: #ff0000;
+  }
+
+  a.highlightlink:hover {
+    color: green;
+  }
+
+  /* attribute */
+  a[target=_blank] {
+    background-color: yellow;
+  }
+ 
+  /* attribute~="value" Selector */
+  [title~="member"] {
+    border: 5px solid yellow;
+  }
